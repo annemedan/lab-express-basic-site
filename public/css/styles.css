@@ -5,7 +5,7 @@
     margin: 0;
 }
 body {
-    background: black;
+    background: rgb(238, 179, 233);
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -16,6 +16,36 @@ h1, h2 {
     font-size: 3rem;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid lightgreen;
+    background-color: rgb(236, 146, 224);
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: darkgreen;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: hotpink;
+  }
+  
+li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+
 #header {
     display: flex;
     justify-content: center;
@@ -23,9 +53,53 @@ h1, h2 {
 }
 
 #show-xuxa {
-    size: 100px
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 400px;
 }
 
-#nav-bar {
-    color: pink
+.parent {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 50% 15%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    display: flex;
+    justify-content: center
+    
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 3; 
+        display: inline-flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+p {
+    color: white;
+    font-size: 50px;
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-xuxa {
+    color: rgb(238, 50, 144);
+    font-size: 15px;
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+
+}
+
+#xuxa-old, #xuxa-new {
+    
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width: 30%; 
 }

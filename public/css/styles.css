@@ -103,3 +103,18 @@ p {
     margin-bottom: 35px;
     width: 30%; 
 }
+
+.xuxa-works {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr 200px;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+  }
+  img {
+    max-width: 90%;
+    height: auto;
+  }
